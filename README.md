@@ -66,7 +66,7 @@ A comprehensive Streamlit application for searching and analyzing UK companies u
 
 4. **Run the application**
    ```bash
-   streamlit run app.py
+   streamlit run Home.py
    ```
 
 5. **Open in browser**
@@ -153,8 +153,10 @@ A comprehensive Streamlit application for searching and analyzing UK companies u
 ### Project Structure
 ```
 uk-company-db/
-├── app.py                    # Main Streamlit application
-├── companies_house_api.py    # API client and data models
+├── Home.py                   # Main Streamlit application
+├── utils/
+│   ├── __init__.py          # Python package init
+│   └── companies_house_api.py # API client and data models
 ├── requirements.txt          # Python dependencies
 ├── .env.sample              # Environment template
 ├── .env                     # Environment configuration

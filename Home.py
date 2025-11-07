@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 try:
-    from companies_house_api import CompaniesHouseAPI, CompanyProfile, Officer, PSC
+    from utils.companies_house_api import CompaniesHouseAPI, CompanyProfile, Officer, PSC
 except ImportError:
     st.error("Could not import Companies House API module. Please check the installation.")
     st.stop()
