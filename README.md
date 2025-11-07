@@ -62,7 +62,10 @@ A comprehensive Streamlit application for searching and analyzing UK companies u
    ```bash
    cp .env.sample .env
    # Edit .env and add your Companies House API key
+   # CH_API_KEY=your_companies_house_api_key_here
    ```
+   
+   **⚠️ Important**: You must obtain your own Companies House API key. The application will not work without it.
 
 4. **Run the application**
    ```bash
@@ -182,10 +185,11 @@ All data is sourced from the official UK Companies House API, providing:
 
 ## 🔒 Security & Privacy
 
-- API keys stored securely in environment variables
-- No data persistence - all searches are real-time
-- Official government data source
-- Rate limiting to respect API guidelines
+- **API keys**: Store securely in environment variables, never commit to version control
+- **No data persistence**: All searches are real-time, no data stored locally
+- **Official data source**: Direct from UK government Companies House API
+- **Rate limiting**: Respects API guidelines and usage quotas
+- **Environment files**: .env files are excluded from git commits for security
 
 ## 📝 License
 
